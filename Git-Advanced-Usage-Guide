@@ -1,0 +1,85 @@
+Git-Advanced-Usage-Guide
+Title
+Git Advanced Usage Guide: Rebase, Stash, and Tag
+Description
+This guide describes advanced Git usage for managing branches, temporary work archives, and creating tags for systematic version control. It's suitable for projects requiring complex workflows and easy rollback.
+
+#Git-Advanced-Usage-Guide/
+repository/
+├── docs/ # Main Documents (Docs)
+│   ├── project-A/
+│ │ ├── overview.md # Project Overview
+│ │ ├── checklist.md # Checklist of data to be collected
+│ │ ├── summary.yaml # Structured data summary
+│ │ └── references.md # Sources/Reference Links
+│   ├── project-B/
+│   │   ├── overview.md
+│   │   ├── checklist.md
+│   │   ├── summary.yaml
+│   │   └── references.md
+│ └── templates/ # Standard templates
+│       ├── checklist-template.md
+│       ├── summary-template.yaml
+│       └── overview-template.md
+│
+├── wiki/ # Wiki (mirror of Docs)
+│   ├── project-A.md
+│   ├── project-B.md
+│ └── index.md # Index for all projects
+│
+├── queries/ # Query warehouse for retrieving data
+│   ├── project-A/
+│   │   └── analysis.sql
+│   └── project-B/
+│       └── analysis.sql
+│
+└── main-repo.md # Large box (overall overview)
+
+
+
+Scope of Use
+Branch Management (Rebase)
+
+
+use git rebaseTo rearrange the commits into a straight line.
+Simplify the commit history and make the merge cleaner.
+Temporary Work (Stash)
+
+
+use git stashTo save unfinished work without committing.
+Ideal for switching branches without losing unfinished work.
+Version Control (Tag)
+
+
+use git tagTo create important reference points, such as releases or milestones.
+This makes it easy to revert to a specific version.
+
+✅ Checklist for advanced Git usage
+[ ] use git rebaseTo make the commit history clean and easy to read.
+[ ] use git stashWhen there are pending tasks and you need to switch branches.
+[ ] use git tagTo define a significant milestone or release.
+[ ] Check commit history after rebase to prevent data loss.
+[ ] Push tag to remote so that the team can access it.
+[ ] Sync Docs/Wiki after major updates.
+
+⚖️ Principles of Use
+use foxExercise caution, especially when working with a team (you should rebase your own branch, not a shared branch).
+use stashThis is for temporary storage only and should not be used as a substitute for a complete commit.
+use tagTo create clear points of reference, such as releases or milestones.
+Maintain transparency in commit and tag logs.
+Respect safety and ethical considerations when sharing information.
+
+🚨 Ethics & Safety Banner
+⚠️ **Ethics & Safety Notice**
+
+Advanced Git usage requires following these principles:
+
+- Use rebase, stash, and tag correctly and transparently.
+- You are responsible for the consequences of modifying commit history.
+- Do not use Git to manipulate data or hide important changes.
+- Respect the ethics and safety of all parties.
+
+By accessing and using this information, the user agrees to these terms.
+
+
+
